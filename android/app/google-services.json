@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "465925088688",
+    "project_id": "usc-faker",
+    "storage_bucket": "usc-faker.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:465925088688:android:7835b3e6082038d20ea275",
+        "android_client_info": {
+          "package_name": "de.n1c0qn.usc_faker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "465925088688-jpbuob72fcvoiiem097cmdug3grtguib.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCXoDxAR0p-0O38iXZm8CRcuB9zqXVNwNg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "465925088688-jpbuob72fcvoiiem097cmdug3grtguib.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
