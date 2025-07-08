@@ -1,0 +1,16 @@
+{
+  "projects": {
+    "default": "usc-faker",
+    "staging": "usc-faker"
+  },
+  "targets": {
+    "usc-faker": {
+      "hosting": {
+        "staging": [
+          "usc-faker"
+        ]
+      }
+    }
+  }
+}
+

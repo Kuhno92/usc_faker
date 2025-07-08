@@ -20,13 +20,14 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'usc_faker',
       theme: ThemeData(
           primarySwatch: Colors.blue,
           primaryColor: Colors.grey,
           textTheme: TextTheme(
-              bodyText2: TextStyle(fontSize: 16.0, color: Colors.white),
-              bodyText1: TextStyle(fontSize: 20.0, color: Colors.red))),
+              bodyMedium: TextStyle(fontSize: 16.0, color: Colors.white),
+              bodyLarge: TextStyle(fontSize: 20.0, color: Colors.red))),
       home: BlocProvider(
         create: (context) => UscProviderBloc()..add(LoadUscProvider()),
         lazy: false,
