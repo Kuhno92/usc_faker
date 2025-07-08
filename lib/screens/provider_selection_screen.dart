@@ -56,15 +56,30 @@ class _ProviderSelectionScreenState extends State<ProviderSelectionScreen> {
                                   ),
                                 );
                               },
-                              child: Container(
-                                width: double.maxFinite,
-                                child: Padding(
-                                  padding: const EdgeInsets.all(8.0),
-                                  child: Text(
-                                    item['Title']!,
-                                    style: TextStyle(color: Colors.grey),
+                              child: Row(
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceBetween,
+                                children: [
+                                  Container(
+                                    child: Padding(
+                                      padding: const EdgeInsets.all(8.0),
+                                      child: Text(
+                                        item['Title']!,
+                                        style: TextStyle(color: Colors.grey),
+                                      ),
+                                    ),
                                   ),
-                                ),
+                                  IconButton(
+                                      onPressed: () {
+                                        BlocProvider.of<UscProviderBloc>(
+                                                context)
+                                            .add(DeleteUscProvider(item));
+                                      },
+                                      icon: Icon(
+                                        Icons.delete,
+                                        color: Colors.red,
+                                      ))
+                                ],
                               ),
                             ),
                           ))

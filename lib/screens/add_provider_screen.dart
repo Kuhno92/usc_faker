@@ -37,23 +37,33 @@ class _AddProviderScreenState extends State<AddProviderScreen> {
             Form(
               key: _formKey,
               child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
+                crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   TextFormField(
+                    decoration: InputDecoration(
+                        hintText: 'Enter an title (E.g. Golds Gym)',
+                        hintStyle: TextStyle(
+                            color: Colors.grey.withAlpha(100)) // Example text
+                        ),
                     // The validator receives the text that the user has entered.
                     validator: (value) {
                       if (value == null || value.isEmpty) {
-                        return 'Please enter some text';
+                        return 'Please enter a title';
                       }
                       _title = value;
                       return null;
                     },
                   ),
                   TextFormField(
+                    decoration: InputDecoration(
+                        hintText: 'Enter a activity (E.g. Fitness, Squash ...)',
+                        hintStyle: TextStyle(
+                            color: Colors.grey.withAlpha(100)) // Example text
+                        ),
                     // The validator receives the text that the user has entered.
                     validator: (value) {
                       if (value == null || value.isEmpty) {
-                        return 'Please enter some text';
+                        return 'Please enter some activity';
                       }
                       _activity = value;
                       return null;

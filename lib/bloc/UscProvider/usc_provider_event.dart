@@ -15,3 +15,9 @@ class AddUscProvider extends UscProviderEvent {
 
   AddUscProvider(this.provider);
 }
+
+class DeleteUscProvider extends UscProviderEvent {
+  final Map<String, dynamic> provider;
+
+  DeleteUscProvider(this.provider);
+}
