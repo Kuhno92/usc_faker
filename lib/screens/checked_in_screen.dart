@@ -279,7 +279,7 @@ class _CheckedInScreenState extends State<CheckedInScreen> {
                         radius: 20,
                         child: Icon(
                           Icons.check,
-                          color: const Color(0xFF6ABC88),
+                          color: const Color(0xFF058461),
                         ),
                       ),
                     ),
